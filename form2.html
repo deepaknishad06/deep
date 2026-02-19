@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <table border="1">
+            <tr bgcolor="lightblue">
+                <th colspan="4">Personal details</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr><br>
+            <tr>
+                <td><label for="password">password</label></td>
+                <td><input type="password" name="password" id=""> </td>
+            </tr>
+            <tr>
+                <td><label for="e-mail">e-mail</label></td>
+                <td><input type="email" name="e-mail" id=""> </td>
+            </tr>
+            <tr>
+                <td><label for="Gender">Gender</label></td>
+                <!-- <td><input type="Gender" name="Gender" id=""> </td> -->
+                <td>Male<input type="radio" name="gender" id="male"> &nbsp;&nbsp;&nbsp;
+                    Female<input type="radio" name="gender" id="female">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Contact">Contact</label></td>
+                <td><input type="text" name="Contact" id=""> </td>
+            </tr>
+            <tr bgcolor="lightblue">
+                <th colspan="4">Educational Qualification</th>
+            </tr>
+            <tr>
+                <td><label for="degree">Degree</label></td>
+                <td><select name="degree" id="">
+                        <option value="group">Select group</option>
+                        <option value="group">BCA</option>
+                        <option value="group">BSC IT.</option>
+                        <option value="group">DCA</option>
+                    </select></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td><label for="Engineering">Engineering</label></td>
+                <td><select name="Engineering" id="">
+                        <option value="group">Select group</option>
+                        <option value="group">option 1</option>
+                        <option value="group">option 2</option>
+                        <option value="group">option 3</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="Hobbies">Hobbies</label></td>
+                <!-- <td><input type="Hobbies" name="Hobbies" id=""> </td> -->
+                <td> Chess<input type="Checkbox" name="Hobbies" id="male"> &nbsp;&nbsp;&nbsp;
+                    books<input type="Checkbox" name="Hobbies" id="female">
+                </td>
+            </tr>
+            <tr bgcolor="lightblue">
+                <th colspan="4">Address</th>
+            </tr>
+            <tr>
+                <label for="address">
+                    <td colspan="4" rowspan="2">&nbsp;</td>
+                </label>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>
+                    <label for="file">
+                        Attach Resume &nbsp; &nbsp;<input type="file">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="4"><button action="submit"> SUBMIT </button></th>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

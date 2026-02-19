@@ -1,0 +1,18 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.parent {
+    height: 200px;
+    width: 400px;
+    background-color: brown;
+}
+
+@media(min-width:1000px) {
+    .parent {
+        background-color: cadetblue;
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+}

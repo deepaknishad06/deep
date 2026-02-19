@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    justify-self: center;
+}
+
+.div1 {
+    height: 100px;
+    width: 400px;
+    background-color: chocolate;
+    border: 1px solid black;
+    justify-self: center;
+
+}
+
+.span1 {
+    height: 400px;
+    width: 50%;
+    background-color: rgb(117, 64, 26);
+    border: 1px solid black;
+    display: inline-block;
+    /* justify-self: center; */
+}

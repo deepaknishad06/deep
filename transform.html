@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            height: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: #a1ccca;
+        }
+
+        .parent2 {
+            height: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: #a1ccca;
+        }
+
+        ._2a {
+            margin-top: 50px;
+            background-color: brown;
+            height: 200px;
+            width: 200px;
+            font-size: 35px;
+            color: azure;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .a {
+            transform: scale(0.5);
+        }
+
+        .b {
+
+            transform: skewY(10deg);
+        }
+
+        .c {
+            transform: translateY(25px);
+        }
+
+        .d {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="a _2a">Scale</div>
+        <div class="b _2a">SkewY 10Deg</div>
+    </div>
+    <div class="parent2">
+        <div class="c _2a"> TranslateY 25px</div>
+        <div class="d _2a">Rotate 45Deg</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.parent {
+    height: 900px;
+    width: 100%;
+    background-color: rgb(216, 168, 109);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* flex-shrink: ; */
+
+}
+
+.child {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+}
+
+.ab {
+    align-self: start;
+    order: -10;
+    background-color: aquamarine;
+}
+
+.a1 {
+    background-color: aliceblue;
+}
+
+.a2 {
+    background-color: rgb(19, 93, 158);
+}
+
+.a3 {
+    background-color: rgb(15, 122, 136);
+}
+
+.a4 {
+    background-color: rgb(131, 123, 11);
+}
+
+.a5 {
+    background-color: rgb(154, 22, 172);
+}
+
+.a6 {
+    background-color: rgb(176, 236, 97);
+}
+
+.a7 {
+    background-color: rgb(18, 55, 88);
+}

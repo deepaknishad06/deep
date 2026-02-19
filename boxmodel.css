@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(81, 104, 177);
+}
+
+.h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.content {
+    /* /* display: block;
+    justify-self: center;
+    height: 100px; */
+    /* display: flex; */
+    /* justify-items: center;
+    justify-self: center; */
+    width: 90%;
+    border: 2px solid white;
+    background-color: burlywood;
+}
+
+.para {
+    display: flex;
+    align-content: center;
+    /* align-items: center; */
+    justify-content: center;
+    justify-self: center;
+    height: 90%;
+    width: 80%;
+    border: 40px solid white;
+    padding: 20px;
+    margin: 50px;
+    background-color: blueviolet;
+
+}

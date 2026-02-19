@@ -1,0 +1,123 @@
+.main {
+    height: 800px;
+    display: flex;
+}
+
+.bg {
+    display: flex;
+    width: auto;
+    height: 750px;
+    background-image: url(hq720.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.cars {
+    background-image: url(car-removebg-preview\ \(1\).png);
+    height: 150px;
+    width: 400px;
+    top: 600px;
+    background-repeat: no-repeat;
+    position: absolute;
+    animation-name: ab;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    left: 0px;
+}
+
+/* .car {
+    padding-top: 600px;
+    position: absolute;
+    animation-name: ab;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+} */
+
+.wheel1 {
+    height: 50px;
+    width: 50px;
+    top: 60px;
+    left: 63px;
+    position: absolute;
+    animation-name: wheel;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    /* animation-iteration-count: 2; */
+    animation-direction: normal;
+    /* border-radius: 100%; */
+
+}
+
+.wheel2 {
+    height: 50px;
+    width: 50px;
+    top: 60px;
+    left: 256px;
+    position: absolute;
+    animation-name: wheel;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    /* animation-iteration-count: 2; */
+    animation-direction: normal;
+}
+
+@keyframes ab {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 800px;
+    }
+}
+
+@keyframes wheel {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes ab {
+    0% {
+        top: 600px;
+        left: 0px;
+    }
+
+    15% {
+        top: 580px
+    }
+
+    30% {
+        top: 600px;
+    }
+
+    45% {
+        top: 580px;
+    }
+
+    60% {
+        top: 580px
+    }
+
+    75% {
+        top: 600px;
+    }
+
+    86% {
+        top: 580px;
+    }
+
+    100% {
+        top: 600px;
+        left: 1000px;
+    }
+
+}

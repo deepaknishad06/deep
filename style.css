@@ -1,0 +1,46 @@
+/* * {
+    /* margin: 0;
+    padding: 0; */
+/* background-color: rgb(209, 171, 115); */
+/* } */
+
+*/ .h3 {
+    background-color: coral;
+}
+
+.p3 {
+    height: 600px;
+    font-style: italic;
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    /* background-color: rgb(93, 129, 129); */
+    background-image: url(Picture2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.divlorem {
+    height: 700px;
+    width: 100%;
+    background-image: url(image\ copy.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.divlo2 {
+    font-style: italic;
+    background-color: rgb(207, 182, 148);
+}
+
+.textp {
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+    text-decoration: underline;
+    font-weight: lighter;
+    text-shadow: 5px 10px 5px rgb(17, 14, 14);
+    /* font-family: ; */
+
+}

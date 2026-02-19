@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.airp {
+    display: flex;
+    width: auto;
+    height: 650px;
+    background-image: url(image.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.airplane {
+    top: 550px;
+    /* background-repeat: no-repeat; */
+    position: absolute;
+    transform: rotateX(15deg);
+    animation-name: ab;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+/* 
+@keyframes ab {
+    0% {
+        top: 550px;
+        left: 0px;
+    }
+
+    25% {
+        top: 530px;
+    }
+
+    50% {
+        top: 480px;
+    }
+
+    75% {
+        top: 440px;
+    }
+
+    100% {
+        top: 400px;
+        left: 1000px;
+    }
+
+} */
+@keyframes ab {
+    from {
+        top: 550px;
+        left: 0px;
+        transform: translate(0px);
+        scale: 1;
+    }
+
+    to {
+        top: 200px;
+        left: 1000px;
+        transform: translate(1000px);
+        scale: 0.7;
+        rotate: -10deg;
+    }
+
+}

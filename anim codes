@@ -1,0 +1,5 @@
+ animation-name: ab;
+ animation-duration: 10s;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+ animation-direction: normal;

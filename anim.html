@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            width: 200px;
+            height: 200px;
+            right: 0;
+            background-color: #f0a2a2;
+            position: absolute;
+            animation-name: ab;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+
+        /*  @keyframes ab {
+            from {
+                top: 0px;
+            }
+
+            to {
+                background-color: aqua;
+                border-radius: 50px;
+                top: 900px;
+            }
+        }*/
+        @keyframes ab {
+            0% {
+                top: 0px;
+                right: 0px;
+                background-color: darkgoldenrod;
+                border-radius: 100%;
+            }
+
+            15% {
+                top: 400px;
+                right: 200px;
+                background-color: #964949;
+                border-radius: 0px;
+            }
+
+            30% {
+                top: 0px;
+                right: 400px;
+                background-color: darkcyan;
+                border-radius: 100%;
+            }
+
+            45% {
+                top: 400px;
+                right: 600px;
+                background-color: #f5890e;
+                border-radius: 0px;
+            }
+
+            60% {
+                top: 0px;
+                right: 800px;
+                background-color: #24db33;
+                border-radius: 100%;
+            }
+
+            75% {
+                top: 400px;
+                right: 1000px;
+                background-color: #bf11d6;
+                border-radius: 0px;
+            }
+
+            90% {
+                top: 0px;
+                right: 1200px;
+                background-color: #3951da;
+                border-radius: 100%;
+            }
+
+            100% {
+                top: 0px;
+                right: 0px;
+                background-color: #410606;
+                border-radius: 0px;
+            }
+        }
+
+        .nn {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            background-color: #f16e6e;
+            animation-direction: alternate-reverse;
+            animation-name: ba;
+            animation-timing-function: linear;
+            animation-iteration-count: 4;
+            animation-duration: 6s;
+        }
+
+        /*     @keyframes ba {
+            from {
+                left: 0px;
+            }
+
+            to {
+                background-color: brown;
+                border-radius: 60px;
+                left: 600px;
+            }
+        } */
+
+
+        @keyframes ba {
+            0% {
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                left: 500px;
+                top: 0px
+            }
+
+            50% {
+                left: 500px;
+                top: 500px;
+            }
+
+            75% {
+                left: 0px;
+                top: 500px;
+            }
+
+            100% {
+                left: 0px;
+                top: 0px
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent"></div>
+    <div class="nn"></div>
+</body>
+
+</html>

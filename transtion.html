@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .ab {
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+        }
+
+        .a {
+            transition-property: transform;
+            transition-duration: 4s;
+            transition-timing-function: linear;
+            transition-delay: 1s;
+        }
+
+        .a:hover {
+            transform: skewY(180deg)translate(400px);
+
+        }
+
+        .b {
+            transition-property: transform;
+            transition-duration: 4s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s;
+        }
+
+        .b:hover {
+            transform: rotate(45Deg);
+        }
+
+        .c {
+            transition-property: transform;
+            transition-duration: 4s;
+            transition-timing-function: ease-out;
+            transition-delay: 1s;
+        }
+
+        .c:hover {
+            transform: translateY(600px);
+        }
+
+        .d {
+            transition-property: transform;
+            transition-duration: 4s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+        }
+
+        .d:hover {
+            transform: scale(2);
+        }
+
+        .e {
+            background-color: #5383eb;
+            transition-property: background-color;
+            transition-duration: 0.3s;
+            transition-timing-function: linear;
+        }
+
+        .e:hover {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="a ab"></div>
+        <div class="b ab"></div>
+        <div class="c ab"></div>
+        <div class="d ab"></div>
+        <div class="e ab"></div>
+    </div>
+</body>
+
+</html>

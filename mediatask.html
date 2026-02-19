@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0px;
+        background-color: rgb(163, 100, 100);
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: 700;
+        flex-wrap: nowrap;
+        position: fixed;
+        align-items: center;
+        width: 100%;
+    }
+
+    .dropdown {
+        display: none;
+        background-color: #2283f3;
+    }
+
+    @media(max-width:1000px) {
+        .elem {
+            display: none;
+        }
+
+        .menu {
+            justify-content: space-between;
+        }
+
+        .dropdown {
+            display: flex;
+            margin-right: 50px;
+            height: 30px;
+            width: 30px;
+            background-color: #2283f3;
+            font-size: large;
+            font-weight: 700;
+        }
+
+    }
+
+    .tours {
+        display: flex;
+        justify-content: left;
+        margin-left: 30px;
+        margin-right: 200px;
+        font-size: 30px;
+        font-style: italic;
+    }
+</style>
+
+<body>
+
+    <header>
+        <ul class="menu">
+            <li class="tours">Tours</li>
+            <li class="elem">HOME</li>
+            <li class="elem">ABOUT</li>
+            <li class="elem">TOURS</li>
+            <li class="elem">BLOGS</li>
+            <li class="elem">PAGES</li>
+            <li class="elem">CONTACT</li>
+            <li class="searchhead elem">
+                <input type="text" class="inputbox1" placeholder="Enter a Keyword">
+                <i class="fa-brands fa-searchengin" id="icon1">
+                </i>
+            </li>
+            <li class="dropdown"><select name="" id="">
+                    <option value="">Home</option>
+                    <option value="">About</option>
+                    <option value="">Tours</option>
+                    <option value="">Blogs</option>
+                    <option value="">Pages</option>
+                    <option value="">Contact</option>
+                    <option value=""></option>
+                </select></li>
+        </ul>
+    </header>
+</body>
+
+</html>

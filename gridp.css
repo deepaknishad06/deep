@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.parent {
+    height: 800px;
+    width: auto;
+    background-color: rgb(179, 155, 125);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.child {
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.a1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.a2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: chocolate;
+}
+
+.a3 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    background-color: blueviolet;
+}
+
+.a6 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: rgb(114, 114, 233);
+}
+
+.a4 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: rgb(219, 146, 146);
+}
+
+.a7 {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    background-color: #eb5858;
+}
+
+.a5 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: #45f393;
+}
+
+.a8 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: #b251ca;
+}

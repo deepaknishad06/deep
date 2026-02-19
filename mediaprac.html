@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .parent {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 600px;
+            width: 100%;
+            background-color: burlywood;
+            flex-wrap: wrap;
+        }
+
+        .one {
+            height: 200px;
+            width: 300px;
+            background-color: rgb(165, 42, 155);
+        }
+
+        .second {
+            height: 200px;
+            width: 300px;
+            background-color: brown;
+        }
+
+        .third {
+            height: 200px;
+            width: 300px;
+            background-color: rgb(42, 91, 165);
+        }
+
+        @media(max-width:1000px) {
+            .one {
+                background-color: cornflowerblue;
+            }
+        }
+
+        @media(max-width:900px) {
+            .second {
+                background-color: rgb(173, 237, 100);
+                border-radius: 80px;
+            }
+        }
+
+        @media(max-width:800px) {
+            .third {
+                background-color: rgb(237, 100, 175);
+                border: 4px solid black;
+                border-radius: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="one"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+    </div>
+</body>
+
+</html>
