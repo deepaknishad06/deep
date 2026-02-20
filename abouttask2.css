@@ -25,11 +25,9 @@ header {
 }
 
 
-.list-header {
-    display: none;
+.home-backbutton:hover{
     color: chocolate;
 }
-
 
 .fa-spoon {
     color: rgb(255, 123, 0);
@@ -69,7 +67,9 @@ li {
     background-color: rgb(203, 214, 223);
     border-radius: 25px;
 }
-
+.about{
+    color:chocolate
+}
 a {
     text-decoration: none;
     color: black;
@@ -97,6 +97,8 @@ a {
 
 .hometoabout {
     display: flex;
+    
+    font-weight: 900;
 }
 
 .bannerimg01 {
@@ -112,12 +114,39 @@ a {
     width: 200px;
 }
 
+ header #header-icon {
+    display: none;
+    color: chocolate;
+}
+
+
+@media(max-width:667px) {
+    header nav {
+        display: none;
+    }
+
+    header #header-icon {
+        display: block;
+        height: 35;
+        background-color: chocolate;
+        color: rgb(250, 248, 246);
+        margin-left: 55%;
+        border-radius: 7px;
+        margin-right: 10px;
+    }
+
+
+    .logo {
+        display: flex;
+        scale: inherit;
+    }
+}
 /* #################################card and desc################################## */
 
 
 
 .container02 {
-    height: 600px;
+    padding-top: 20px;
     width: 100%;
     position: relative;
     background-color: #fff;
@@ -287,7 +316,7 @@ a {
 .container4 {
     height: 550px;
     width: 100%;
-    background-color: #c0b4b4;
+    background-color: #ffffff;
 }
 
 .heading-container4 {
@@ -307,14 +336,198 @@ a {
 .cards {
     height: 400px;
     width: 250px;
-    border: 1px solid;
     border-radius: 15px;
     margin-top: 20px;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
 .team-img {
     width: 250px;
     border-radius: 15px;
+}
+.icons-social-cards{
+    display: flex;
+    margin-top: 5px;
+    flex-direction: row;
+}
+.cards img:hover{   
+     display: block;
+    transition: transform 0.3s linear;
+    /* transform: scale(110%); */
+}
+@media (max-width:1200px) {
+    .container4{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cards-4th{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+/* #################################Container 5############################################ */
+
+.container5 {
+    padding-top: 30px;
+    height: 350px;
+    width: 100%;
+    background-color: #7bdcb5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-child1 {
+    padding-left: 30px;
+    height: 350px;
+    width: 500px;
+    margin-top: 100px;
+    /* background-color: #fff; */
+}
+
+.container-child2 {
+    padding-left: 30px;
+    height: 350px;
+    width: 500px;
+    margin-top: 100px;
+}
+
+.heading-container p {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.heading-container02 p {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.quote-container {
+    margin-left: 20px;
+    position: absolute;
+    left: -1px;
+    top: -2;
+}
+
+#quote-container02 {
+    margin-left: 20px;
+    position: absolute;
+
+}
+
+
+.container-display-flex {
+    display: flex;
+    gap: 90px;
+    position: relative;
+    left: -100px;
+
+}
+
+.profile-container {
+    margin-top: 40px;
+}
+
+.profile-container02 {
+    margin-top: 40px;
+}
+
+.fa-star {
+    color: chocolate;
+}
+
+.container-image {
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 50%;
+
+}
+
+.container-image02 {
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 50%;
+
+}
+/* #############################Email and footer */
+
+.email-updates {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn-email-container {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 0px 25px 25px 0px;
+    background-color: chocolate;
+    width: 160px;
+    font-size: 18px;
+}
+
+.placeholder-email {
+    padding: 15px;
+    width: 400px;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 25px 0px 0px 25px;
+    outline: none;
+}
+
+.placeholder-email:focus {
+    border: 2px solid rgb(29, 230, 213);
+}
+
+.email-updates h2 {
+    width: 600px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.btn-email-container:hover {
+
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 250px;
+}
+
+.chleft-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    width: 400px;
+    padding-top: 50px;
+    margin-left: 100px;
+}
+
+.chright-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    width: 400px;
+    padding-top: 50px;
+    margin-left: 100px;
+}
+
+.span-footer {
+    display: flex;
+}
+
+footer div {
+    display: flex;
 }
