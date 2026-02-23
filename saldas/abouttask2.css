@@ -25,7 +25,7 @@ header {
 }
 
 
-.home-backbutton:hover{
+.home-backbutton:hover {
     color: chocolate;
 }
 
@@ -67,12 +67,18 @@ li {
     background-color: rgb(203, 214, 223);
     border-radius: 25px;
 }
-.about{
-    color:chocolate
+
+.about {
+    color: chocolate
 }
+
 a {
     text-decoration: none;
     color: black;
+}
+
+.about a {
+    color: chocolate;
 }
 
 .container1 {
@@ -97,7 +103,7 @@ a {
 
 .hometoabout {
     display: flex;
-    
+
     font-weight: 900;
 }
 
@@ -114,7 +120,7 @@ a {
     width: 200px;
 }
 
- header #header-icon {
+header #header-icon {
     display: none;
     color: chocolate;
 }
@@ -141,6 +147,7 @@ a {
         scale: inherit;
     }
 }
+
 /* #################################card and desc################################## */
 
 
@@ -348,27 +355,32 @@ a {
     width: 250px;
     border-radius: 15px;
 }
-.icons-social-cards{
+
+.icons-social-cards {
     display: flex;
     margin-top: 5px;
     flex-direction: row;
 }
-.cards img:hover{   
-     display: block;
+
+.cards img:hover {
+    display: block;
     transition: transform 0.3s linear;
     /* transform: scale(110%); */
 }
+
 @media (max-width:1200px) {
-    .container4{
+    .container4 {
         display: flex;
         flex-wrap: wrap;
     }
-    .cards-4th{
+
+    .cards-4th {
         display: flex;
         flex-wrap: wrap;
     }
-    
+
 }
+
 /* #################################Container 5############################################ */
 
 .container5 {
@@ -455,6 +467,7 @@ a {
     border-radius: 50%;
 
 }
+
 /* #############################Email and footer */
 
 .email-updates {

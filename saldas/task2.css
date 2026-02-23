@@ -21,13 +21,27 @@ header {
     color: black;
 
 }
-.home{
-    color: chocolate;
-    
-}
-.home:hover{
+
+
+.home:hover {
     cursor: pointer;
 }
+
+.elem a {
+    text-decoration: none;
+    color: black;
+}
+
+.home a {
+    color: chocolate;
+
+}
+
+header a:hover {
+    color: chocolate;
+    transition: 0.3s ease-in;
+}
+
 .menu {
     display: flex;
     /* width: 700px; */
@@ -88,6 +102,8 @@ li {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    top: 80px;
 }
 
 .first {
@@ -129,9 +145,11 @@ li {
     animation-direction: normal;
     animation-delay: 0ms;
 }
-.nav{
+
+.nav {
     color: black;
 }
+
 @keyframes ab {
     from {
         transform: rotate(0deg);
