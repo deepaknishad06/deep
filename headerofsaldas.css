@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    z-index: 3;
+    padding: 10px 50px;
+    height: 80px;
+    width: 100%;
+    background-color: #00d084;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+.menu {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.home-backbutton:hover{
+    color: chocolate;
+}
+
+.fa-spoon {
+    color: rgb(255, 123, 0);
+}
+
+.logo {
+    font-size: 40px;
+    font-style: italic;
+    margin-left: 30px;
+}
+
+li {
+    display: inline;
+    padding-left: 0px;
+    font-weight: 600;
+    padding-right: 50px;
+}
+
+
+.srch {
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    border-radius: 25px;
+}
+
+.inputbox1 {
+    background-color: aliceblue;
+    padding: 10px;
+    border: 0px;
+    border-radius: 25px;
+}
+
+.bthn {
+    padding: 10px;
+    border: 0px;
+    background-color: rgb(203, 214, 223);
+    border-radius: 25px;
+}
+.about{
+    color:chocolate
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ header .list-header {
+    display: none;
+    color: chocolate;
+}
+
+
+@media(max-width:1150px) {
+    header nav {
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .srch{
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+    border-radius: 25px;
+
+    }
+    .inputbox1{
+    background-color: aliceblue;
+    padding: 10px;
+    border: 0px;
+    border-radius: 25px;
+    width: 90px;
+    }
+
+    header .list-header {
+        display: block;
+        height: 35;
+        background-color: chocolate;
+        color: rgb(250, 248, 246);
+        margin-left: 55%;
+        border-radius: 7px;
+        margin-right: 10px;
+    }
+
+
+    .logo {
+        display: flex;
+        scale: inherit;
+    }
+}
