@@ -206,15 +206,22 @@ header a {
 }
 .cards-child{
     display: flex;
+    height: 150px;
     background-color: #fff;
     border-radius: 15px;
     border-left: 4px solid chocolate;
     border-bottom: 1px solid rgba(18, 18, 18, 0.171);
     border-right: 1px  solid rgba(18, 18, 18, 0.171);
-    
+    justify-content: space-around;
+    align-items: center;
 }
 .cards-child img{
-    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    align-self: center;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin-left: 30px;
 }
 .heading-desc{
     display: flex;
@@ -222,6 +229,23 @@ header a {
     justify-content: center;
     margin-left: 20px;
 }
+.hhhp{
+    display: flex;
+    flex-direction: row;
+    padding-right: 150px;
+}
+.btn{
+    
+    border: 1px solid black;
+    padding: 12px 18px;
+    border-radius: 25px 25px 25px 25px;
+    color: #ffff;
+    background-color: chocolate;
+    width: auto;
+    font-size: 18px;
+    display: flex;
+}
+
 .heading-desc h1{
     position: relative;
 }
@@ -280,9 +304,6 @@ footer {
 
 footer div {
     display: flex;
-}
-#iconsocial{
-    scale: 150px;
 }
 /* .social-icons{
     display: flex;
