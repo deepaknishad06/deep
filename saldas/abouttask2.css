@@ -7,7 +7,7 @@
 header {
     z-index: 3;
     padding: 10px 50px;
-    height: 80px;
+    /* height: 80px; */
     width: 100%;
     background-color: #00d084;
     display: flex;
@@ -15,8 +15,13 @@ header {
     align-items: center;
     position: sticky;
     top: 0px;
+    flex-wrap: wrap;
 }
 
+#header-icon{
+    display: none;
+    color: chocolate;
+}
 .menu {
 
     display: flex;
@@ -24,6 +29,9 @@ header {
     flex-wrap: wrap;
 }
 
+.menuhomepage a {
+    color: chocolate;
+}
 
 .home-backbutton:hover {
     color: chocolate;
@@ -72,27 +80,103 @@ li {
     color: chocolate
 }
 
-a {
+header a {
     text-decoration: none;
     color: black;
 }
 
-.about a {
+.container1 a {
+    text-decoration: none;
+    color: black;
+
+}
+
+header .list-header {
+    display: none;
+    color: chocolate;
+}
+
+
+@media(max-width:1000px) {
+    header nav {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .srch {
+        display: flex;
+        flex-direction: row;
+        background-color: aliceblue;
+        border-radius: 25px;
+
+    }
+    .search{
+        display: none;
+    }
+    .inputbox1 {
+        background-color: aliceblue;
+        padding: 10px;
+        border: 0px;
+        border-radius: 25px;
+        width: 90px;
+    }
+
+    header .list-header {
+        display: block;
+        /* height: 35; */
+        background-color: chocolate;
+        color: rgb(250, 248, 246);
+        /* margin-left: 55%; */
+        border-radius: 7px;
+        margin-right: 10px;
+    }
+
+
+    .logo {
+        display: flex;
+        scale: inherit;
+    }
+    #header-icon {
+        display: block;
+        /* height: 35; */
+        background-color: chocolate;
+        color: rgb(250, 248, 246);
+        /* margin-left: 55%; */
+        border-radius: 7px;
+        margin-right: 10px;
+    }
+}
+
+.elem:hover {
+    color: chocolate;
+    cursor: pointer;
+}
+
+#elem-m:hover {
     color: chocolate;
 }
 
 .container1 {
-    height: 200px;
+    /* height: 200px; */
     width: 100%;
     background-color: #00d084;
     display: flex;
     position: relative;
+    flex-wrap: wrap;
+}
+
+.home-backbutton:hover {
+    color: chocolate;
 }
 
 .heading01 {
     align-content: center;
     margin-left: 80px;
-    height: 150px;
+    /* height: 150px; */
     width: 300px;
     color: black;
 }
@@ -111,43 +195,18 @@ a {
     position: relative;
     margin-left: 100px;
     bottom: -52px;
-    height: 200px;
+    /* height: 200px; */
     width: 200px;
 }
 
 .imagebanner2 {
-    height: 200px;
+    /* height: 200px; */
     width: 200px;
 }
 
-header #header-icon {
-    display: none;
-    color: chocolate;
+.bannerimg01 {
+    z-index: 0;
 }
-
-
-@media(max-width:667px) {
-    header nav {
-        display: none;
-    }
-
-    header #header-icon {
-        display: block;
-        height: 35;
-        background-color: chocolate;
-        color: rgb(250, 248, 246);
-        margin-left: 55%;
-        border-radius: 7px;
-        margin-right: 10px;
-    }
-
-
-    .logo {
-        display: flex;
-        scale: inherit;
-    }
-}
-
 /* #################################card and desc################################## */
 
 
@@ -161,10 +220,11 @@ header #header-icon {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .collage-2 {
-    height: 550px;
+    /* height: 550px; */
     width: 550px;
     display: flex;
     align-items: center;
@@ -216,11 +276,11 @@ header #header-icon {
 .image02 {
     margin-top: 0px;
     margin-left: 10%;
-    /* height: 150px; */
+    height: 150px;
 }
 
 .collage {
-    height: 550px;
+    /* height: 550px; */
     width: 550px;
     display: flex;
     flex-direction: row;
@@ -240,17 +300,38 @@ header #header-icon {
     position: absolute;
 
 }
+@media(max-width:1200px){
+    .img-01{
+        height: 400px;
+        width: 250px;
+    }
+    .img-02{
+        height: 400px;
+        width: 250px;
+    }
+    .container02{
+        margin-bottom: 80px;
+    }
+}
 
 /* #################################Container 3################################## */
 
 .container03 {
-    height: 600px;
+    margin-top: 70px;
+    /* height: 600px; */
     width: 100%;
     position: relative;
     background-color: #00d084;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+@media (max-width:1200px) {
+    .container02{
+        display: flex;
+        justify-content: center;
+    }    
 }
 
 .img-02100 {
@@ -311,6 +392,8 @@ header #header-icon {
     display: flex;
     position: relative;
     left: -220px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .btn-viewmore-container3:hover {
@@ -322,7 +405,7 @@ header #header-icon {
 /* #################################################Container 4################################################### */
 
 .container4 {
-    height: 550px;
+    /* height: 550px; */
     width: 100%;
     background-color: #ffffff;
 }
@@ -332,6 +415,7 @@ header #header-icon {
     display: flex;
     justify-content: center;
     padding-top: 50px;
+    width: 100%;
 }
 
 .cards-4th {
@@ -385,12 +469,13 @@ header #header-icon {
 
 .container5 {
     padding-top: 30px;
-    height: 350px;
+    /* height: 350px; */
     width: 100%;
     background-color: #7bdcb5;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .container-child1 {
@@ -471,7 +556,7 @@ header #header-icon {
 /* #############################Email and footer */
 
 .email-updates {
-    height: 250px;
+    /* height: 250px; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -511,6 +596,21 @@ header #header-icon {
 .btn-email-container:hover {
 
     cursor: pointer;
+}
+
+@media (max-width:1000px) {
+    .email-updates{
+        width: auto;
+    }
+    .placeholder-email{
+        width: 300px;
+    }
+    .btn-email-container{
+        width: 100px;
+    }
+    .email-updates h2{
+        font-size: 30px;
+    }
 }
 
 footer {
