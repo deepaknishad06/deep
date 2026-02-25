@@ -18,10 +18,11 @@ header {
     flex-wrap: wrap;
 }
 
-#header-icon{
+#header-icon {
     display: none;
     color: chocolate;
 }
+
 .menu {
 
     display: flex;
@@ -76,7 +77,7 @@ li {
     border-radius: 25px;
 }
 
-.about {
+header .about a {
     color: chocolate
 }
 
@@ -114,9 +115,11 @@ header .list-header {
         border-radius: 25px;
 
     }
-    .search{
+
+    .search {
         display: none;
     }
+
     .inputbox1 {
         background-color: aliceblue;
         padding: 10px;
@@ -140,6 +143,7 @@ header .list-header {
         display: flex;
         scale: inherit;
     }
+
     #header-icon {
         display: block;
         /* height: 35; */
@@ -207,6 +211,7 @@ header .list-header {
 .bannerimg01 {
     z-index: 0;
 }
+
 /* #################################card and desc################################## */
 
 
@@ -300,16 +305,19 @@ header .list-header {
     position: absolute;
 
 }
-@media(max-width:1200px){
-    .img-01{
+
+@media(max-width:1200px) {
+    .img-01 {
         height: 400px;
         width: 250px;
     }
-    .img-02{
+
+    .img-02 {
         height: 400px;
         width: 250px;
     }
-    .container02{
+
+    .container02 {
         margin-bottom: 80px;
     }
 }
@@ -327,11 +335,12 @@ header .list-header {
     align-items: center;
     flex-wrap: wrap;
 }
+
 @media (max-width:1200px) {
-    .container02{
+    .container02 {
         display: flex;
         justify-content: center;
-    }    
+    }
 }
 
 .img-02100 {
@@ -599,16 +608,19 @@ header .list-header {
 }
 
 @media (max-width:1000px) {
-    .email-updates{
+    .email-updates {
         width: auto;
     }
-    .placeholder-email{
+
+    .placeholder-email {
         width: 300px;
     }
-    .btn-email-container{
+
+    .btn-email-container {
         width: 100px;
     }
-    .email-updates h2{
+
+    .email-updates h2 {
         font-size: 30px;
     }
 }

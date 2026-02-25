@@ -18,10 +18,11 @@ header {
     flex-wrap: wrap;
 }
 
-#header-icon{
+#header-icon {
     display: none;
     color: chocolate;
 }
+
 .menu {
 
     display: flex;
@@ -54,6 +55,9 @@ li {
     padding-right: 50px;
 }
 
+header .home-chocolte {
+    color: chocolate;
+}
 
 .srch {
     display: flex;
@@ -96,7 +100,6 @@ header .list-header {
     color: chocolate;
 }
 
-
 @media(max-width:1000px) {
     header nav {
         display: none;
@@ -112,34 +115,29 @@ header .list-header {
         flex-direction: row;
         background-color: aliceblue;
         border-radius: 25px;
-        margin-left: 0px;
+        margin: 0px;
 
     }
-    .search{
+
+    .search {
         display: none;
     }
+
     .inputbox1 {
         background-color: aliceblue;
         padding: 10px;
         border: 0px;
         border-radius: 25px;
         width: 90px;
-    }
-
-    header .list-header {
-        display: block;
-        /* height: 35; */
-        background-color: chocolate;
-        color: rgb(250, 248, 246);
-        /* margin-left: 55%; */
-        border-radius: 7px;
-        margin-right: 0px;
+        margin: 0px;
     }
 
 
     .logo {
         display: flex;
+        scale: inherit;
     }
+
     #header-icon {
         display: block;
         /* height: 35; */
@@ -159,9 +157,9 @@ header .list-header {
 #elem-m:hover {
     color: chocolate;
 }
+
 .parent-body {
     width: 100%;
-    /* height: 600px; */
     background-color: #7bdcb5;
     display: flex;
     flex-direction: row;
@@ -172,13 +170,13 @@ header .list-header {
 }
 
 @media (max-width:1200px) {
-    .parent-body{
+    .parent-body {
         flex-wrap: wrap;
     }
 
-        .blocks-first-1{
-            font-size: 45px;
-        }
+    .blocks-first-1 {
+        font-size: 45px;
+    }
 }
 
 .first {
@@ -199,7 +197,7 @@ header .list-header {
     font-size: 45px;
     display: flex;
     width: 800px;
-    font-size:85px;
+    font-size: 85px;
 }
 
 .second {
@@ -276,6 +274,7 @@ header .list-header {
     position: relative;
     left: 40px;
 }
+
 .btn {
     display: flex;
     justify-content: center;
@@ -297,7 +296,7 @@ header .list-header {
 }
 
 .parent-012 {
-    margin: 30px  0px;
+    margin: 30px 0px;
     /* height: 700px; */
     width: 100%;
     background-color: #ffffff;
@@ -396,10 +395,11 @@ header .list-header {
 
 .sty-cards {
     width: 100%;
-    height: 500px;
+    /* height: 500px; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .cards-11 {
@@ -470,15 +470,15 @@ header .list-header {
 
 .about-r-menu {
     width: 100%;
-    /* height: 450px; */
     background-color: #7bdcb5;
     position: relative;
     margin-bottom: 80px;
+    /* display: block; */
 }
 
 .heading-r-menu {
     /* height: 70px; */
-    width: 800px;
+    width: 100%;
     font-size: 50px;
     font-weight: 900;
     padding-top: 70px;
@@ -488,29 +488,15 @@ header .list-header {
     flex-wrap: wrap;
     /* background-color: #afa7a7; */
 }
-@media(max-width:1100px){
-    .heading-r-menu{
-        display: flex;
-        flex-direction: column;
-    }
-    .about-un-2{
-        display: flex;
-        flex-direction: column;
-        width: 600px;
-    }
-    .half-img{
-        height: 450px;
-        width: auto;
-    }
-}
 
 .half-img {
     display: flex;
-    /* height: 450px; */
-    width: 300px;
+    height: 550px;
+    /* width: 300px; */
     justify-self: flex-end;
     position: absolute;
 }
+
 
 .heading-r-menu span {
     color: chocolate;
@@ -520,17 +506,27 @@ header .list-header {
     display: flex;
     justify-content: space-around;
     margin-top: 100px;
-    margin-left: 70px;
-    width: 900px;
+    padding-left: 50px;
+    width: 700px;
     /* height: 150px; */
     flex-wrap: wrap;
 }
 
 .un-2 {
-    height: 150px;
-    width: 400px;
+    height: 100px;
     display: flex;
     font-size: 18px;
+}
+
+@media (max-width:1100px) {
+    .un-2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .un-2child {
+        display: none;
+    }
 }
 
 .btn-02 {
@@ -554,6 +550,24 @@ header .list-header {
 
 .r-menu-button {
     width: 300px;
+}
+
+@media(max-width:1100px) {
+    .heading-r-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-un-2 {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+    }
+
+    .half-img {
+        /* height: 350px; */
+        width: auto;
+    }
 }
 
 .block4th {
@@ -870,14 +884,12 @@ footer div {
     }
 
 
-    .list-header {
+    header .list-header {
         display: block;
-        height: 35;
         background-color: chocolate;
         color: rgb(250, 248, 246);
-        margin-left: 55%;
         border-radius: 7px;
-        margin-right: 10px;
+        /* margin-right: 10px; */
     }
 
 
