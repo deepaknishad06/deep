@@ -174,8 +174,12 @@ header .list-header {
         flex-wrap: wrap;
     }
 
-    .blocks-first-1 {
-        font-size: 45px;
+    .parent-body .first .first-two .blocks-first-1 {
+        font-size: 55px;
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+
     }
 }
 
