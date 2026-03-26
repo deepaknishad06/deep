@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let sum = 0;
+        let percentage = 0;
+        Total = parseInt(500)
+        hindi = parseInt(prompt("Enter the marks of Hindi Subject:"))
+        english = parseInt(prompt("Enter the marks od english Subject:"))
+        punjabi = parseInt(prompt("enter the marks of punjabi subject:"))
+        evs = parseInt(prompt("enter the marks of evs subject:"))
+        maths = parseInt(prompt("enter the marks of maths subject:"))
+
+        document.write("Punjabi = " + punjabi + "<br>")
+        document.write("english = " + english + "<br>")
+        document.write("Hindi = " + hindi + "<br>")
+        document.write("Maths = " + maths + "<br>")
+        document.write("evs = " + evs + "<br>")
+
+        sum = hindi + english + punjabi + maths + evs
+        document.write("Total Obitained Marks = " + sum + "<br>")
+        document.write("Total Marks = " + Total + "<br>")
+
+        percentage = sum / Total * 100
+        document.write("Percentage is = " + percentage + "%" + "<br>")
+
+        if (percentage >= 90) {
+            document.write("A Grade")
+        }
+        else if (percentage >= 80) {
+            document.write("B Grade")
+        }
+        else if (percentage >= 70) {
+            document.write("C Grade")
+        }
+        else if (percentage >= 60) {
+            document.write("D Grade")
+        }
+        else if (percentage >= 50) {
+            document.write("E Grade")
+        }
+        else if (percentage <= 33) {
+            document.write("Fail")
+        }
+
+    </script>
+</body>
+
+</html>
