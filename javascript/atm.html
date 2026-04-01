@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var ammount = parseInt(50000)
+        a = parseInt(prompt("Enter Your PIN Number"))
+        if (a == 1234) {
+            b = parseInt(prompt("Enter 1 for withdraw,2 for Deposit,3 for Enquiry"))
+        }
+        else {
+            alert("Enter Correct PIN code:")
+        }
+
+        if (b == 1) {
+            c = parseInt(prompt("Enter Ammount for withdraw:"))
+        }
+        else if (b == 2) {
+            d = parseInt(prompt("Enter Ammount for Deposit:"))
+            if (d >= 1) {
+                f = parseInt(prompt("ammount Deposit sucessfully, Enter 1 for Enquiry, 2 For Exit"))
+                let totalnew = ammount + d
+                if (f == 1) {
+                    document.write("your Account Balance is :" + totalnew)
+                }
+                else if (f == 2) {
+                    alert("Thanks You!")
+                }
+                else {
+                    alert("enter a valid digit:")
+                }
+            }
+        }
+        else if (b == 3) {
+            document.write("your Account Balance is :" + ammount)
+        }
+        else {
+            alert("Enter a valid Digit:")
+        }
+
+        let total = ammount - c
+        if (c <= 50000) {
+            e = parseInt(prompt("ammount withdraw sucessfully, Enter 1 for Enquiry, 2 For Exit"))
+
+            if (e == 1) {
+                document.write("your Account Balance is :" + total)
+            }
+            else if (e == 2) {
+                alert("Thanks")
+            }
+            else {
+                alert("Enter a valid Digit:")
+            }
+        }
+
+        else {
+            alert("Your Account Balance is Low")
+        }
+        /*else if (d >= 1) {
+                   f = parseInt(prompt("ammount Deposit sucessfully, Enter 1 for Enquiry, 2 For Exit"))
+               }
+       
+               let totalnew = ammount + d
+               if (d >= 1) {
+                   f = parseInt(prompt("ammount Deposit sucessfully, Enter 1 for Enquiry, 2 For Exit"))
+       
+                   if (f = 1) {
+                       document.write("your Account Balance is :" + totalnew)
+                   }
+               }
+               else {
+                   alert("Enter a Valid Ammount")
+               }
+       
+       
+               /*
+               if (c <= ammount) {
+                   d = parseInt(("Ammount withdrawl Sucessfully.....Enter 1 for Enquiry, 2 for Exit."))
+               }
+               
+                        
+                       if (d == 1) {
+                           alert("hii")
+                       }
+                       else {
+                           alert("nn")
+                       }
+                       /*total = parseint(ammount - c)
+                       if (d == 1) {
+                           alert("Your Total Ammount is" + total)
+                       }
+                       else if (d == 2) {
+                           alert("Thanks you!")
+                       }
+                       else {
+                           alert("enter the correct number")
+               
+                       }*/
+
+
+
+
+    </script>
+</body>
+
+</html>
