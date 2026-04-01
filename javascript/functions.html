@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <p class="first" onclick="sum()"></p> -->
+    <p id="sec" onclick="sum()">hi</p>
+    <p> </p>
+    <!-- <button onmouseover="sum()">click</button> -->
+    <script>
+        function sum(a = 12, b = 23) {
+            console.log(a + b)
+
+            //  document.getElementsByTagName("p")[0].innerHTML = "js dom"
+            //  document.getElementsByClassName("second")[0].innerHTML = "hello"
+            document.getElementById("sec").innerHTML = "new"
+            document.getElementById("sec").style.color = "red"
+            document.getElementById("sec").style.fontSize = "35px"
+        }
+
+
+    </script>
+</body>
+
+</html>
