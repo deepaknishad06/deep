@@ -12,15 +12,23 @@
     <p id="sec" onclick="sum()">hi</p>
     <p> </p>
     <!-- <button onmouseover="sum()">click</button> -->
+
     <script>
         function sum(a = 12, b = 23) {
             console.log(a + b)
 
             //  document.getElementsByTagName("p")[0].innerHTML = "js dom"
             //  document.getElementsByClassName("second")[0].innerHTML = "hello"
-            document.getElementById("sec").innerHTML = "new"
-            document.getElementById("sec").style.color = "red"
+            document.getElementById("sec").innerHTML = "new line"
+            document.getElementById("sec").style.color = "#00ffff"
             document.getElementById("sec").style.fontSize = "35px"
+            document.getElementById("sec").style.justifySelf = "right"
+            document.getElementById("sec").style.background = "black"
+            document.getElementById("sec").style.background = "black"
+            document.getElementById("sec").style.padding = "30px"
+            document.getElementById("sec").style.borderRadius = "5px"
+            document.getElementById("sec").style.cursor = "pointer"
+
         }
 
 
