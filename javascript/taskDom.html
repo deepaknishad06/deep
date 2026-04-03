@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button onclick="inc()" id="ac">Increse</button>
+    <p id="ab">0</p>
+    <button onclick="dec()" id="dc">Decrease</button>
+
+
+
+    <script>
+        let ab = 0;
+        let out = document.getElementById("ab")
+        function inc() {
+
+            if (ab < 10) {
+                ab++
+                out.innerHTML = ab
+            } else {
+                out.innerHTML = ab
+            }
+        }
+
+        function dec() {
+
+            if (ab < 1) {
+                out.innerHTML = ab
+            }
+            else {
+                ab--
+                out.innerHTML = ab
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="Start" onclick="setin()">Start</button>
+    <p id="ab">0</p>
+    <button id="pause" onclick="ps()">Pause</button>
+
+    <button id="Reset">Reset</button>
+    <script>
+        //  getElementById("Start").onclick = setInterval(inc, 100);
+
+        let ab = 0;
+        let out = document.getElementById("ab")
+        function inc() {
+
+            if (ab < 20000) {
+                ab++
+                out.innerHTML = ab
+            } else {
+                out.innerHTML = ab
+            }
+        }
+        function setin() {
+            setInterval(inc, 100)
+        }
+        function ps() {
+            clearInterval(inc, 100)
+        }
+
+
+
+    </script>
+</body>
+
+</html>
